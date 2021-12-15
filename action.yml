@@ -1,0 +1,22 @@
+name: "Deploy an AWS Lambda function"
+description: "Update a Lambda function from a ZIP file"
+author: "Francesco Novy"
+branding:
+  icon: "zap"
+  color: "purple"
+inputs:
+  zip:
+    description: "Path to a zip package of the complete Lambda source and dependencies."
+    default: ""
+    required: true
+  functionName:
+    description: "Name of the Lambda function"
+    default: ""
+    required: true
+  region:
+    description: "AWS region"
+    default: ""
+    required: true
+runs:
+  using: "node12"
+  main: "index.js"
