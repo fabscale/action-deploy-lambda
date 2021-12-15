@@ -1,0 +1,14 @@
+{
+  "name": "action-deploy-lambda",
+  "version": "1.0.0",
+  "description": "A Github Action to deploy new lambda function code.",
+  "main": "index.js",
+  "repository": "https://github.com/fabscale/action-deploy-lambda",
+  "author": "Francesco Novy <francesco@fabscale.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@aws-sdk/client-lambda": "^3.43.0"
+  }
+}
