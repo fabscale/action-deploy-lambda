@@ -11,7 +11,7 @@ Deploy a Lambda function via Github Action.
     role-to-assume: ${{ secret.DEPLOY_ROLE }}
     aws-region: eu-west-1
 
-- name: Deploy to Lambda Staging
+- name: Deploy to Lambda
   uses: fabscale/action-deploy-lambda@v1
   with:
     zip: lambda-bundle.zip
